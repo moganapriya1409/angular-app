@@ -1,0 +1,28 @@
+<form (ngSubmit)="updateUser()">
+  <div>
+    <label for="name">Name:</label>
+    <input id="name" name="name" [(ngModel)]="user.name" placeholder="Enter name" />
+  </div>
+
+  <div>
+    <label for="mailid">Email ID:</label>
+    <input id="mailid" name="mailid" [(ngModel)]="user.mailid" placeholder="Enter email ID" />
+  </div>
+
+  <div>
+    <label for="phonenumber">Phone Number:</label>
+    <input id="phonenumber" name="phonenumber" [(ngModel)]="user.phonenumber" placeholder="Enter phone number" />
+  </div>
+
+  <div>
+    <label for="address">Address:</label>
+    <input id="address" name="address" [(ngModel)]="user.address" placeholder="Enter address" />
+  </div>
+
+  <div>
+    <label for="password">Password:</label>
+    <input id="password" name="password" type="password" [(ngModel)]="user.password" placeholder="Enter password" />
+  </div>
+
+  <button type="submit">Save</button>
+</form>
